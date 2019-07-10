@@ -13,6 +13,31 @@ import java.util.Objects;
  * Message object
  */
 public class Message implements Validable {
+    
+    @SerializedName("ref")
+    private String ref;
+    
+    @SerializedName("refSource")
+    private String refSource;
+    
+    
+    public String getRef() {
+        return ref;
+    }
+    
+    public void setRef(String ref) {
+        this.ref = ref;
+    }
+    
+    public String getRefSource() {
+        return refSource;
+    }
+    
+    public void setRefSource(String refSource) {
+        this.refSource = refSource;
+    }
+    
+    
     @SerializedName("action")
     private MessageAction action;
 
